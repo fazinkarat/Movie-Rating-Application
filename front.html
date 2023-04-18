@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Rating Application</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<h1>Movie Rating Application</h1>
+		<navi>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#movies">Movies</a></li>
+				<li><a href="#add-review">Add Review</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="home">
+			<h2>Welcome to Movie Rating Application!</h2>
+			<p>Browse our collection of movies, read reviews, and add your own ratings and reviews.</p>
+			<button><a href="#movies">View Movies</a></button>
+		</section>
+
+		<section id="movies">
+			<h2>Movies</h2>
+			<div class="movie-list">
+				<div class="movie">
+					<img src="movie1.jpg">
+					<h3>Movie Title</h3>
+					<p>Release Year: 2022</p>
+					<p>Genre: Action</p>
+					<p>Rating: 4.5/5</p>
+					<button><a href="#add-review">Add Review</a></button>
+				</div>
+
+				<div class="movie">
+					<img src="movie2.jpg">
+					<h3>Movie Title</h3>
+					<p>Release Year: 2023</p>
+					<p>Genre: Comedy</p>
+					<p>Rating: 3.8/5</p>
+					<button><a href="#add-review">Add Review</a></button>
+				</div>
+
+				<div class="movie">
+					<img src="movie3.jpg">
+					<h3>Movie Title</h3>
+					<p>Release Year: 2021</p>
+					<p>Genre: Drama</p>
+					<p>Rating: 4.2/5</p>
+					<button><a href="#add-review">Add Review</a></button>
+				</div>
+			</div>
+		</section>
+
+		<section id="add-review">
+			<h2>Add Review</h2>
+			<form>
+				<label for="movie-title">Movie Title:</label>
+				<input type="text" id="movie-title" name="movie-title" required>
+
+				<label for="review-text">Review:</label>
+				<textarea id="review-text" name="review-text" required></textarea>
+
+				<label for="rating">Rating:</label>
+				<select id="rating" name="rating" required>
+					<option value="" disabled selected>Select rating</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Movie Rating Application. All rights reserved.</p
+            
